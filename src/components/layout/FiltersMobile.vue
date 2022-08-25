@@ -9,8 +9,8 @@
 
 <script>
 import { defineComponent } from 'vue';
-import { useFilterStore } from '../../stores/filter';
-import Filters from '../common/Filters.vue';
+import { useFilterStore } from '@/stores/filter';
+import Filters from '@/components/common/Filters.vue';
 
 export default defineComponent({
     components: { Filters },

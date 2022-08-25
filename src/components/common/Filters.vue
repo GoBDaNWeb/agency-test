@@ -52,9 +52,9 @@
 </template>
 
 <script>
-import FilterCheckbox from '../ui/FilterCheckbox.vue';
+import FilterCheckbox from '@/components/ui/FilterCheckbox.vue';
 import { defineComponent } from 'vue';
-import { useFilterStore } from '../../stores/filter';
+import { useFilterStore } from '@/stores/filter';
 
 export default defineComponent({
     components: { FilterCheckbox },

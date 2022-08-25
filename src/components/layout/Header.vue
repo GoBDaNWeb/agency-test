@@ -1,9 +1,9 @@
 <template>
     <header class="header">
         <button class="burger">
-            <img src="src/assets/burger.png" alt="burger" />
+            <img src="@/assets/burger.png" alt="burger" />
         </button>
-        <img src="src/assets/logo.png" alt="logo" />
+        <img src="@/assets/logo.png" alt="logo" />
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-list--item">Продукты</li>
@@ -20,13 +20,13 @@
         <div class="features">
             <ul class="features-list">
                 <li class="features-list--item">
-                    <img src="src/assets/search.png" alt="search" />
+                    <img src="@/assets/search.png" alt="search" />
                 </li>
                 <li class="features-list--item">
-                    <img src="src/assets/profile.png" alt="profile" />
+                    <img src="@/assets/profile.png" alt="profile" />
                 </li>
                 <li class="features-list--item">
-                    <img src="src/assets/heart.png" alt="heart" />
+                    <img src="@/assets/heart.png" alt="heart" />
                 </li>
             </ul>
             <button @click="cart.handleOpenCart()" class="cart">
@@ -38,7 +38,7 @@
 
 <script>
 import { defineComponent } from 'vue';
-import { useCartStore } from '../../stores/cart';
+import { useCartStore } from '@/stores/cart';
 
 export default defineComponent({
     setup() {

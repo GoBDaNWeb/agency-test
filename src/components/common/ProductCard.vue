@@ -8,7 +8,7 @@
                 v-if="isInCart()"
                 @click="removeProduct(product)"
             >
-                <img src="src/assets/close.png" alt="" />
+                <img src="@/assets/close.png" alt="" />
             </ProductCardButton>
             <ProductCardButton v-else @click="addProduct(product)">
                 +
@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import ProductCardButton from '../ui/ProductCardButton.vue';
-import { useCartStore } from '../../stores/cart';
+import ProductCardButton from '@/components/ui/ProductCardButton.vue';
+import { useCartStore } from '@/stores/cart';
 import { defineComponent } from 'vue';
 
 export default defineComponent({

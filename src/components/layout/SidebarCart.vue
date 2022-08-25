@@ -34,9 +34,9 @@
 
 <script>
 import { defineComponent, ref } from 'vue';
-import { useCartStore } from '../../stores/cart';
-import CloseCartButton from '../ui/CloseCartButton.vue';
-import CartItem from '../common/CartItem.vue';
+import { useCartStore } from '@/stores/cart';
+import CloseCartButton from '@/components/ui/CloseCartButton.vue';
+import CartItem from '@/components/common/CartItem.vue';
 import { mapState } from 'pinia';
 
 export default defineComponent({

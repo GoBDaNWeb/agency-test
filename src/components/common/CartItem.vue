@@ -33,20 +33,20 @@
                 v-if="product.disabled"
                 class="remove-btn"
             >
-                <img src="src/assets/repeat.png" alt="repeat" />
+                <img src="@/assets/repeat.png" alt="repeat" />
             </button>
 
             <button @click="removeProduct(product)" v-else class="remove-btn">
-                <img src="src/assets/close.png" alt="close" />
+                <img src="@/assets/close.png" alt="close" />
             </button>
         </div>
     </div>
 </template>
 
 <script>
-import { useCartStore } from '../../stores/cart';
+import { useCartStore } from '@/stores/cart';
 import { defineComponent } from 'vue';
-import QuntityButton from '../ui/QuntityButton.vue';
+import QuntityButton from '@/components/ui/QuntityButton.vue';
 export default defineComponent({
     components: {
         QuntityButton,

@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import ProductCardList from '../components/common/ProductCardList.vue';
-import Filters from '../components/common/Filters.vue';
-import Swiper from '../components/common/Swiper.vue';
-import { useTShirts } from '../hooks/useTSirts';
+import ProductCardList from '@/components/common/ProductCardList.vue';
+import Filters from '@/components/common/Filters.vue';
+import Swiper from '@/components/common/Swiper.vue';
+import { useTShirts } from '@/hooks/useTSirts';
 import { defineComponent } from 'vue';
-import { useFilterStore } from '../stores/filter';
+import { useFilterStore } from '@/stores/filter';
 import { mapState } from 'pinia';
 
 export default defineComponent({

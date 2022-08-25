@@ -1,12 +1,12 @@
 <template>
     <button @click="cart.handleOpenCart" class="close-btn">
-        <img src="src/assets/close.png" alt="" />
+        <img src="@/assets/close.png" alt="" />
     </button>
 </template>
 
 <script>
 import { defineComponent } from 'vue';
-import { useCartStore } from '../../stores/cart';
+import { useCartStore } from '@/stores/cart';
 export default defineComponent({
     setup() {
         const cart = useCartStore();

@@ -11,8 +11,8 @@
 
 <script>
 import { defineComponent } from 'vue';
-import { useCartStore } from '../../stores/cart';
-import { useFilterStore } from '../../stores/filter';
+import { useCartStore } from '@/stores/cart';
+import { useFilterStore } from '@/stores/filter';
 
 export default defineComponent({
     setup() {

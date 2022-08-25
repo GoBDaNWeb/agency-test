@@ -26,8 +26,8 @@
 
 <script>
 import ProductCard from './ProductCard.vue';
-import Select from '../ui/Select.vue';
-import { useFilterStore } from '../../stores/filter';
+import Select from '@/components/ui/Select.vue';
+import { useFilterStore } from '@/stores/filter';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
