@@ -1,5 +1,5 @@
 <template>
-    <div class="products-list">
+    <div :class="isLoading && 'products-list'">
         <div class="products-info">
             <h4 class="total-info">
                 <span v-if="products">
@@ -61,9 +61,6 @@ export default defineComponent({
 </script>
 
 <style>
-.products-list {
-    width: 80%;
-}
 .list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -71,9 +68,14 @@ export default defineComponent({
     row-gap: 1rem;
     width: 100%;
 }
-.loading {
-    text-align: center;
+.products-list {
+    width: 100%;
 }
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
 .products-info {
     display: flex;
     justify-content: space-between;
