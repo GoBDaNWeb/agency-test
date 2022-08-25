@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="products-list">
         <div class="products-info">
             <h4 class="total-info">
                 <span v-if="products">
@@ -13,7 +13,7 @@
             </button>
             <Select @changeSelect="select" />
         </div>
-        <div v-if="isLoading">Loading...</div>
+        <div v-if="isLoading" class="loading"><Loader /></div>
         <div v-else class="list">
             <ProductCard
                 v-for="product in products"
@@ -27,11 +27,12 @@
 <script>
 import ProductCard from './ProductCard.vue';
 import Select from '@/components/ui/Select.vue';
+import Loader from '@/components/ui/Loader.vue';
 import { useFilterStore } from '@/stores/filter';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-    components: { ProductCard, Select },
+    components: { ProductCard, Select, Loader },
     props: {
         products: {
             type: Array,
@@ -60,12 +61,18 @@ export default defineComponent({
 </script>
 
 <style>
+.products-list {
+    width: 80%;
+}
 .list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 1rem;
     row-gap: 1rem;
     width: 100%;
+}
+.loading {
+    text-align: center;
 }
 .products-info {
     display: flex;

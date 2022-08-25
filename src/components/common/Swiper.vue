@@ -60,7 +60,7 @@ export default {
     color: rgba(255, 255, 255, 0.3);
 }
 .swiper {
-    background-image: url('src/assets/sliderImg.jpg');
+    background-image: url('@/assets/sliderImg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
